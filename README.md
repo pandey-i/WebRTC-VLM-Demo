@@ -59,6 +59,6 @@ This writes `output/metrics.json` with median & P95 E2E latency, processed FPS, 
 - Server mode: phone JPEG snapshots to server with single in-flight frame (backpressure) → bounded latency.
 - Metrics: browser batches samples to `/api/metrics`, server provides snapshots and writes `metrics.json` on bench.
 
-Loom video: include a 1-minute demo link here.
+Loom video: [Link](https://www.loom.com/share/3e8d15ccfafd47178a761ca6cc5266ab?sid=41b503c5-df4f-4fc4-979b-22941c8fdd2a).
 
 

@@ -1,0 +1,18 @@
+version: '3.8'
+services:
+  app:
+    build: .
+    environment:
+      - MODE=${MODE:-wasm}
+      - PUBLIC_BASE_URL=
+      - TURN_URL=
+      - TURN_USERNAME=
+      - TURN_CREDENTIAL=
+      - LOCALTUNNEL=${LOCALTUNNEL:-0}
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./output:/app/output
+    restart: unless-stopped
+
+

@@ -1,0 +1,22 @@
+{
+  "name": "webrtc-vlm-demo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Real-time WebRTC multi-object detection demo with WASM and server modes",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node server/index.js"
+  },
+  "dependencies": {
+    "@tensorflow-models/coco-ssd": "2.2.2",
+    "@tensorflow/tfjs-node": "4.17.0",
+    "canvas": "2.11.2",
+    "cors": "2.8.5",
+    "express": "4.19.2",
+    "localtunnel": "2.0.2",
+    "uuid": "9.0.1",
+    "ws": "8.18.0"
+  }
+}
+
+

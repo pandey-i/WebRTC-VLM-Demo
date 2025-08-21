@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>WebRTC VLM Demo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Real-time WebRTC Multi-Object Detection</h1>
+      <div class="controls">
+        <label>Room ID <input id="roomId" placeholder="auto" /></label>
+        <button id="newRoom">New Room</button>
+        <button id="startBtn">Start Session</button>
+        <label><input type="checkbox" id="isPhone" /> I am the phone (sender)</label>
+        <label>Mode
+          <select id="mode">
+            <option value="wasm">wasm</option>
+            <option value="server">server</option>
+          </select>
+        </label>
+        <button id="showQR">Show QR</button>
+      </div>
+      <div id="qr" class="qr"></div>
+      <div class="videos">
+        <div>
+          <h3>Local</h3>
+          <video id="localVideo" playsinline autoplay muted></video>
+        </div>
+        <div>
+          <h3>Remote</h3>
+          <div class="stage">
+            <video id="remoteVideo" playsinline autoplay></video>
+            <canvas id="overlay"></canvas>
+          </div>
+        </div>
+      </div>
+      <div class="stats">
+        <pre id="stats"></pre>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.17.0/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-wasm@4.17.0/dist/tf-backend-wasm.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd@2.2.2"></script>
+    <script src="main.js"></script>
+  </body>
+  </html>
+
+

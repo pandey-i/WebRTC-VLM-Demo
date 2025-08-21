@@ -1,0 +1,14 @@
+{
+  "mode": "server",
+  "duration_s": 30,
+  "generated_at": 1755811603951,
+  "window_seconds": 30,
+  "samples": 63,
+  "e2e_latency_ms_median": 5459,
+  "e2e_latency_ms_p95": 6203,
+  "processed_fps_median": 1,
+  "uplink_kbps_median": 0,
+  "downlink_kbps_median": 0,
+  "server_latency_ms_median": 5408,
+  "network_latency_ms_median": 0
+}

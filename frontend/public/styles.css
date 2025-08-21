@@ -1,0 +1,15 @@
+body { font-family: system-ui, Arial, sans-serif; margin: 0; background: #0b121b; color: #e8edf2; }
+.container { padding: 16px; max-width: 1200px; margin: 0 auto; }
+h1 { font-size: 20px; margin: 8px 0 16px; }
+.controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 12px; }
+label { display: inline-flex; gap: 6px; align-items: center; background: #152131; padding: 6px 8px; border-radius: 6px; }
+input, select, button { background: #0f1723; color: #e8edf2; border: 1px solid #2a3b55; padding: 6px 8px; border-radius: 6px; }
+button { cursor: pointer; }
+.videos { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.stage { position: relative; width: 100%; background: #101827; border: 1px solid #2a3b55; border-radius: 8px; overflow: hidden; }
+video { width: 100%; height: auto; display: block; position: relative; z-index: 1; }
+canvas { position: absolute; left: 0; top: 0; z-index: 2; pointer-events: none; }
+.qr { margin: 10px 0; }
+.stats { margin-top: 12px; background: #0f1723; border: 1px solid #2a3b55; padding: 8px; border-radius: 8px; }
+
+
